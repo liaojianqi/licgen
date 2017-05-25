@@ -1,0 +1,56 @@
+<html>
+<body>
+    <script>
+        function show_archive() {
+            window.location.href='show_license';
+        }    
+    </script>
+    <h1>{{title}}</h1>
+    <form method="post" action="generate">
+        <table>
+            <tr>
+                <td>
+                    <label for="client">客户名称：</label>
+                </td>
+                <td>
+                    <input id="client" name="client">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="not_before">生效时间：</label>
+                </td>
+                <td>
+                    <input id="not_before" name="not_before">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="not_after">过期时间：</label>
+                </td>
+                <td>
+                    <input id="not_after" name="not_after">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="max_host">节点数目：</label>
+                </td>
+                <td>
+                    <input id="max_host" name="max_host">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="查看存档license" onclick="show_archive()">
+                </td>
+                <td>
+                    <input type="submit" value="生成license">
+                </td>
+            </tr>
+        <table>
+    </form>
+    
+</body>
+
+</html>

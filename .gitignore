@@ -1,0 +1,9 @@
+pkg/
+bin/
+src/*
+log.txt
+!src/server
+!src/utils
+src/server/license_log.txt
+!src/security
+
